@@ -1,0 +1,42 @@
+footer {
+    background-color: #f2f2f2
+}  
+ 
+
+footer .footer-inside {
+    padding: 20px 0;
+}
+
+footer .footer-inside-content {
+    padding: 20px 0;
+}
+
+footer .footer-inside-content-item {
+    width: 30%;
+}
+
+footer .footer-inside-content-item-logo img {
+    width: 100px;
+}
+
+footer .footer-inside-content-item-logo-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+footer .footer-inside-content-item-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+footer .footer-inside-content-item-text p {
+    margin-bottom: 10px;
+}
+
+footer .footer-inside-bottom {
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+

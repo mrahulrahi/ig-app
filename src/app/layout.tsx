@@ -5,6 +5,8 @@ import 'aos/dist/aos.css';
 import ImportBsJS from "./importBsJS"
 import ImportAOS from './importAOS';
 import "./globals.css";
+import Header from '@/components/Header/Header';
+import Footer from '@/components/Footer/Footer';
 
 const roboto = Roboto({
   subsets: ['latin'],
@@ -28,9 +30,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${roboto.variable} ${openSans.variable}`}>
-        {children}
+    <html lang="en" className="h-100">
+      <body className={`${roboto.variable} ${openSans.variable} d-flex flex-column h-100`}>
+        <Header />
+        <main className="flex-grow-1">
+          {children}
+        </main>
+        <Footer />
       </body>
       <ImportBsJS />
       <ImportAOS />
