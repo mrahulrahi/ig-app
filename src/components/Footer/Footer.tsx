@@ -1,3 +1,4 @@
+import { FaFacebook, FaFacebookF, FaInstagram, FaLinkedin, FaLinkedinIn, FaXTwitter } from 'react-icons/fa6'
 import './Footer.css'
 import Image from 'next/image'
 const Footer = () => {
@@ -19,20 +20,36 @@ const Footer = () => {
               </div>
 
 
-              <div className="footer-nav">
-                <h3>Quick Links</h3>
-                <ul className="footer-nav-menu">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Features</a></li>
-                </ul>
-              </div>
+
+
               <div className="footer-contact-info">
+                <ul className="footer-contact-list d-flex gap-2 mb-3">
+                  <input type="text" className="form-control" placeholder="email" />
+                  <input type="submit" className="btn btn-default" value="Join Newsletter" />
+                </ul>
                 <h3>Contact Us</h3>
                 <ul className="footer-contact-list">
-                  <li><a href="#">+91 9876543210</a></li>
-                  <li><a href="#">info@imaginergroup.com</a></li>
+                  <li><a href="#">+91 9876543210</a>, <a href="#">info@imaginergroup.com</a></li>
                 </ul>
+             
               </div>
+            </div>
+            <div className="footer-middle d-flex align-items-center justify-content-between">
+
+
+              <ul className="footer-nav-menu d-flex gap-3">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Features</a></li>
+              </ul>
+
+
+              <ul className="social-links d-flex gap-2">
+                <li><a href="#!" className="d-flex align-items-center justify-content-center"><FaFacebookF /></a></li>
+                <li><a href="#!" className="d-flex align-items-center justify-content-center"><FaInstagram /></a></li>
+                <li><a href="#!" className="d-flex align-items-center justify-content-center"><FaXTwitter /></a></li>
+                <li><a href="#!" className="d-flex align-items-center justify-content-center"><FaLinkedinIn /></a></li>
+
+              </ul>
             </div>
             <div className="footer-bottom">
               <p>&copy; {new Date().getFullYear()} Imagine Group. All rights reserved.</p>
