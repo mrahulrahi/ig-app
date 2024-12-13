@@ -7,11 +7,6 @@ const Header = (): React.ReactElement => {
 
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
-  const toggleNavbar = () => {
-    setIsOpen(!isOpen); // Toggle the state
-    document.body.classList.toggle('menu-open', !isOpen); // Toggle class based on the state
-  };
-
   const links = [
     {
       name: 'About Us',
@@ -25,7 +20,7 @@ const Header = (): React.ReactElement => {
 
   return (
     <>
-      <div className="menu-overlay"></div>
+      <div className={`menu-overlay  ${isOpen ? 'menu-open' : ''}`}></div>
       <header id="header">
         <nav className="navbar navbar-expand-lg">
           <div className="container-fluid">
