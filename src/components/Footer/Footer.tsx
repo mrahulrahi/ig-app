@@ -11,7 +11,7 @@ const Footer = () => {
               <div className="footer-inside">
                 <div className="footer-logo-area d-flex align-items-center justify-content-center justify-content-lg-start mb-3">
                   <div className="footer-logo">
-                    <Image src="/images/logo.png" alt="Imagine Group" width={100} height={100} />
+                    <Image src="/images/logo.png" alt="Imagine Group" width={100} height={100} quality={100}/>
                   </div>
                   <span className="footer-name">Imagine <br /> Group</span>
                 </div>
