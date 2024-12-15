@@ -31,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-100">
-      <body className={`${roboto.variable} ${openSans.variable} d-flex flex-column h-100`}>
+      <body className={`${roboto.variable} ${openSans.variable} d-flex flex-column`}>
         <Header />
         <main className="flex-grow-1">
           {children}

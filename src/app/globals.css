@@ -69,7 +69,19 @@ ul:not([class]) > li:before {content: '';position: absolute;left: 2px;top:10px;b
 .img-hover:hover img{transform: scale(1.05);}
 /* =================core css ends here================= */
 
+.heading{margin-bottom: 30px;position: relative;}
+.heading::before{content: '';position: absolute;left: -10px;top: -10px;width: 2px;height: 40px;background: var(--ig-yellow);z-index: -1;}
+.heading::after{content: '';position: absolute;left: -20px;top: 0;width: 40px;height:2px;background: var(--ig-yellow);z-index: -1;}
+.heading h3{font-size: 48px; font-weight: 700; color: var(--ig-black);}
 
+.filter-box{background: white; border: 1px solid var(--ig-grey); padding: 5px 10px;gap: 10px;}
+.filter-box.active{background: lightyellow; border: 1px solid var(--ig-yellow);}
+
+.filter-box .filter-title{font-size: 14px; font-weight:500; color: var(--ig-black);}
+.filter-box .filter-title.active{color: var(--ig-yellow);}
+
+.filter-box .filter-count{font-size: 12px; font-weight:500;line-height: 1; color: var(--ig-black);background: #F2F2F2; padding: 4px;}
+.filter-box.active .filter-count{background: var(--ig-yellow);color: var(--ig-white);}
 
 /*==========================================
 ! Large devices (desktops, less than 1200px)
